@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    username: root
+    password: 19961205
+    url: jdbc:mysql://localhost:3306/niuniu?characterEncoding=UTF-8&useUnicode=true&useSSL=true&serverTimezone=GMT&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  mvc:
+##    date-format: yyyy-MM-dd
+#    static-path-pattern:
+#      classpath: /static/**
+#
+#server:
+#  port: 8082
+#
+#
+#mybatis:
+#  #  驼峰命名
+#  configuration:
+#    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+#    日志打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    主键生成策略
+  global-config:
+    db-config:
+      id-type: assign_id
